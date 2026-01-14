@@ -646,6 +646,96 @@ nav a:hover {
 
 /* ================= END CONTACT ================= */
 
+/* #################### resume section start  ############### */
+/* ================= RESUME SECTION ================= */
+
+
+
+.resume-card {
+  max-width: 450px;
+  margin: 30px auto 0;
+  padding: 30px 24px;
+  border-radius: 16px;
+  background: #f5f7fa;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.resume-card i {
+  font-size: 40px;
+  color: #007acc;
+  margin-bottom: 16px;
+}
+
+.resume-card p {
+  font-size: 14.5px;
+  line-height: 1.7;
+  margin-bottom: 22px;
+  color: #444;
+}
+
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.resume-btn {
+  padding: 11px 22px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  background: #007acc;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* Outline button for View */
+.resume-btn.outline {
+  background: transparent;
+  color: #007acc;
+  border: 2px solid #007acc;
+}
+
+.resume-btn.outline:hover {
+  background: #007acc;
+  color: #fff;
+}
+
+/* Dark mode */
+.dark-mode .resume-card {
+  background: #1e1e1e;
+}
+
+.dark-mode .resume-card p {
+  color: #ccc;
+}
+
+.dark-mode .resume-btn.outline {
+  color: #4da3ff;
+  border-color: #4da3ff;
+}
+
+.dark-mode .resume-btn.outline:hover {
+  background: #4da3ff;
+  color: #000;
+}
+
+/*################ end of resume#################### */
+
+#about p {
+  line-height: 1.8;     /* controls line spacing */
+  letter-spacing: 0.3px;
+  margin-top: 12px;
+}
+
 section {
     padding: 40px;
     max-width: 900px;

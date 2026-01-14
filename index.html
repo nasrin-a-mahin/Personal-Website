@@ -33,12 +33,13 @@
             </div>
             <div class="header-text">
                 <h1>Nasrin A Mahin</h1>
-                <p>Python Developer | Data Analytics Learner | MERN Stack (In Progress)</p>
+                <p>Python Developer | MERN Stack (In Progress)</p>
                 <nav>
                     <a href="#about"></a>
                     <a href="#skills">Skills</a>
                     <a href="#experience">Experience</a>
                     <a href="#projects">Projects</a>
+                    <a href="#resume">Resume</a>
                     <a href="#contact">Contact</a>
                 </nav>
             </div>
@@ -169,7 +170,7 @@
                 <div class="timeline-content">
                     <h3>Coding Instructor</h3>
                     <span class="company-name">Brightchamps</span>
-                    <span class="timeline-date">2020 – 2024</span>
+                    <span class="timeline-date">Jan 2020 – Mar 2023</span>
                     <ul class="timeline-points">
                         <li>Teach programming languages (e.g., Python, Java, C/C++, JavaScript, SQL, etc.)</li>
                         <li>Explain core computer science concepts (OOP, Data Structures, Algorithms) </li>
@@ -188,7 +189,7 @@
                 <div class="timeline-content">
                     <h3>Software Testing</h3>
                     <span class="company-name">3G Technologies</span>
-                    <span class="timeline-date">July 2019 – Jan 2020</span>
+                    <span class="timeline-date">July 2019 – Dec 2019</span>
                     <ul class="timeline-points">
                         <li>Analyzed and reviewed software requirements, specifications, and design documents.</li>
                         <li>Prepare test plans, test strategies, and test schedules</li>
@@ -200,6 +201,38 @@
 
         </div>
     </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+
+        <div class="resume-card">
+            <i class="fa-solid fa-file-lines"></i>
+
+            <p>
+                You can view my resume online or download a copy for offline reference.
+            </p>
+
+            <div class="resume-actions">
+                <!-- View Resume -->
+                <a href="resume/Nasrin_A_Mahin_Resume.pdf" target="_blank" class="resume-btn outline">
+                    View Resume
+                </a>
+
+                <!-- Download Resume -->
+                <a href="resume/Nasrin_A_Mahin_Resume.pdf" download="Nasrin_A_Mahin_Resume.pdf" class="resume-btn">
+                    Download Resume
+                </a>
+
+              
+                <!-- <button class="resume-btn" onclick="forceDownload()">
+                    Download Resume
+                </button> -->
+
+            </div>
+        </div>
+    </section>
+
+
 
     <section id="projects" class="projects">
         <h2>Projects</h2>
@@ -246,28 +279,28 @@
 
             <!-- Send Message -->
             <div class="contact-card message-card">
-  <h3>Send a Message</h3>
-  <p class="message-subtext">Let’s build something great together.</p>
+                <h3>Send a Message</h3>
+                <p class="message-subtext">Let’s build something great together.</p>
 
-  <form class="contact-form">
-    <div class="form-group">
-      <input type="text" required>
-      <label>Your Name</label>
-    </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" required>
+                        <label>Your Name</label>
+                    </div>
 
-    <div class="form-group">
-      <input type="email" required>
-      <label>Your Email</label>
-    </div>
+                    <div class="form-group">
+                        <input type="email" required>
+                        <label>Your Email</label>
+                    </div>
 
-    <div class="form-group">
-      <textarea rows="4" required></textarea>
-      <label>Your Message</label>
-    </div>
+                    <div class="form-group">
+                        <textarea rows="4" required></textarea>
+                        <label>Your Message</label>
+                    </div>
 
-    <button type="submit">Send Message 🚀</button>
-  </form>
-</div>
+                    <button type="submit">Send Message 🚀</button>
+                </form>
+            </div>
 
 
         </div>
@@ -300,8 +333,15 @@
 
     </script>
     <script>
-
+        function forceDownload() {
+            const link = document.createElement("a");
+            link.href = "resume/Nasrin_A_Mahin_Resume.pdf";
+            link.download = "Nasrin_A_Mahin_Resume.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
     </script>
-</body>
+
 
 </html>
